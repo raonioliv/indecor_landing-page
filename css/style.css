@@ -1,0 +1,97 @@
+/* header stylesheet */
+
+header{ 
+    background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)), url("../imgs/hrz-5.jpg");
+    height: 85vh;
+}
+
+.details{ 
+    color: var(--primary);
+    font-size: 5em;
+}
+
+
+/* EVENT BENEFITS */
+.about-event-text{ 
+    height: 10vh;
+    font-size: 3em;
+    background-color: var(--secondary);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.benefits-container{ 
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+
+.benefit{ 
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    /* background-color: red; */
+}
+
+.benefits{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.8em;
+    width: 250px;
+    max-width: 40%;
+}
+.event-description{ 
+    display: block;
+    width: 90%;
+    text-align: center;
+}
+
+
+.benefit1{ 
+    background-image: url("../imgs/sqr-1.jpg");
+}
+.benefit2{ 
+    background-image: url("../imgs/sqr-2.jpg");
+}
+.benefit3{ 
+    background-image: url("../imgs/sqr-3.jpg");
+}
+
+
+@media (min-width:2000px){ 
+    .benefit{
+
+    }
+
+    .benefits{ 
+        font-size: 2.2em;
+    }
+    
+    .benefit1{ 
+        width: 400px;
+        height: 400px;
+    }
+    .benefit2{ 
+        width: 400px;
+        height: 400px;
+    }
+    .benefit3{ 
+        width: 400px;
+        height: 400px;
+    }
+
+    .event-description{ 
+        width: 400px;
+
+
+    }
+}
+
