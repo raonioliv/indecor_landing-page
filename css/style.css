@@ -14,19 +14,20 @@ header{
 /* EVENT BENEFITS */
 .about-event-text{ 
     height: 10vh;
-    font-size: 3em;
+    font-size: 2.6em;
     background-color: var(--secondary);
     font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 
 
 .benefits-container{ 
     display: flex;
     justify-content: space-evenly;
-    padding: 100px;
+    padding: 60px;
 }
 
 .benefit{ 
@@ -66,6 +67,57 @@ header{
 }
 
 
+/* EVENT LOCALIZATION SECTION */
+
+
+.event-local{ 
+    background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../imgs/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.event-adress .adress{ 
+    /* vertical-align: middle; */
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+}
+
+.event-adress i{ 
+    font-size: 6em;
+    color: var(--primary);
+}
+
+
+
+.local-details, .event-adress{
+    width: 30%;
+    gap: 20px;
+}
+
+.local-details{ 
+    flex-direction: column;
+}
+
+.local-details > p{ 
+    font-size: 1.6em;
+    color: white;
+}
+
+.tertiary-title{ 
+    font-size: 4em;
+    color: var(--primary);
+}
+
+
+
+
+
+
 @media (min-width:2000px){ 
     .benefit{
 
@@ -90,8 +142,6 @@ header{
 
     .event-description{ 
         width: 400px;
-
-
     }
 }
 
