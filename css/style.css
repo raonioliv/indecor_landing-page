@@ -1,15 +1,89 @@
 /* header stylesheet */
 
-header{ 
+.header-container{ 
     background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)), url("../imgs/hrz-5.jpg");
     height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .details{ 
     color: var(--primary);
-    font-size: 5em;
+    font-size: 4em;
+    margin-bottom: 20px;
 }
 
+.event-details-header{ 
+    max-width: 350px;
+}
+.event-details-header .event-info{ 
+    font-size: 3em;
+    color: white;
+    font-weight: 700;
+}
+
+.event-date{ 
+    margin-top: 2em;
+    font-size: 2em;
+    color: white;
+}
+.event-date-secondary{ 
+    margin-top: 10px;
+    color: var(--primary);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* FORM HEADER */
+
+form{ 
+    width: 50%;
+    background-color: var(--secondary);
+    margin: 10px 0;
+    max-width: 28%;
+    padding: 30px 20px;
+}
+
+form p{ 
+    font-size: 1.5em;
+    color: black;
+}
+
+.form-group1, .form-group2{ 
+    border: none;
+}
+
+
+.form-group2 select, .form-group1 input{ 
+    width: 100%;
+    border-radius: 5px;
+    height: 2em;
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.form-group1 label, .form-group2 label{ 
+    font-weight: bold;
+    color: var(--text-tertiary);
+    font-size: 1.2em;
+    display: block;
+    margin-top: 10px;
+
+}
+
+form button{ 
+    margin-top: 10px;
+    padding: 10px 40px;
+}
+
+.btn-form{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 /* EVENT BENEFITS */
 .about-event-text{ 
@@ -77,6 +151,7 @@ header{
     height: 60vh;
     align-items: center;
     justify-content: space-around;
+    padding: 30px;
 }
 
 .event-adress .adress{ 
@@ -115,9 +190,130 @@ header{
 
 
 
+/* EVENT DETAILS SECTION STYLESHEET */
+section.event-details{ 
+    display: grid;
+    gap: 40px;
+    box-sizing: border-box;
+    margin: 20px 5% 0 5%;
+}
+
+.detail{ 
+    display: flex;
+}
+.text-detail{ 
+    width: 50%;
+}
+
+.text-detail ul{ 
+    list-style: square;
+    font-size: 1.8em;
+    margin-left: 2em;
+    margin-top: 2em;
+    
+}
+
+.text-detail h3{ 
+    font-size: 2em;
+    font-weight: 500;
+    margin-left: 2em;
+}
+
+.text-big{ 
+    margin-top: 30px;
+    font-size: 3em !important;
+}
+
+.detail__img{ 
+    width: 50%;
+    /* height: fit-content; */
+}
+
+.detail__img img{ 
+    width: 100%;
+    max-width: 640px;
+}
 
 
 
+/* EVENT SUBSCRIPTION SECTION */
+.event-subscription{ 
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)) ,url("../imgs/hrz-6.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-text{ 
+    color: white;
+    font-size: 3em;
+    font-weight: 500 ;
+}
+
+.btn-subscribe button{ 
+    position: relative;
+    background-image: linear-gradient(30deg, #00baf2, #3a859c );
+    color: var(--text-tertiary);
+    font-weight: 400;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn-subscribe button::before{ 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 10px;
+    height: 200%;
+    background-color: rgba(255, 255, 255, .9);
+    transform: rotate(-25deg) translateY(-10%);
+    box-shadow: 0 0 10px #fff;
+    filter: blur(1px);
+    transition: .5s;
+}
+.btn-subscribe .btn-end{ 
+    padding: 10px 80px;
+}
+.btn-subscribe button:hover::before{ 
+    left: 110%;
+
+}
+.btn-subscribe button:hover{ 
+    color: white;
+    background-image: linear-gradient(#70dafa, #00baf2);
+}
+
+
+footer{ 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 45vh;
+    color: var(--secondary);
+}
+.footer-title{ 
+    color: var(--secondary);
+    font-size: 2.5em;
+}
+
+.footer-phrase{ 
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+footer p:not(.footer-phrase){ 
+    font-size: 1.2em;
+    
+}
 @media (min-width:2000px){ 
     .benefit{
 

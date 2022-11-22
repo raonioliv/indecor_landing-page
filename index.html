@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InDecor</title>
+    <title>INDECARALHO</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -22,10 +22,46 @@
 <body>
     <header>
         <div class="header-container">
-            <div class="event-details">
+            <div class="event-details-header">
                 <h3 class="details">InDecor</h3>
+                <p class="event-info">Um evento para revolucionar a sua criatividade</p>
+
+                <p class="event-date">Data do evento:</p>
+                <p class="event-date-secondary">Domingo, 28 de Maio, a partir das 14h</p>
             </div>
+
+            <form action="">
+                <p>Preencha o formulário para receber os detalhes do evento</p>
+                <fieldset class="form-group1">
+                    <label for="name">Nome</label>
+                    <input type="text" placeholder="Digite seu nome">
+    
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Digite seu email">
+    
+                    <label for="phone">Telefone</label>
+                    <input type="tel" placeholder="Ex: (YY) 99999-9999">
+                </fieldset>
+    
+                <fieldset class="form-group2">
+                    <label for="interest">Principal interesse</label>
+                    <select name="interest" id="interest">
+                        <option value="apartment">Apartamento</option>
+                        <option value="house">Casa</option>
+                        <option value="garden">Jardim</option>
+                        <option value="other">Outro</option>
+                    </select>
+    
+                    <div class="btn-subscribe btn-form">
+                        <button type="submit">Quero me inscrever</button>
+                    </div>
+                </fieldset>
+    
+                
+            </form>
         </div>
+
+
     </header>
     <section class="about-event">
         <div class="center about-event-text">
@@ -67,7 +103,66 @@
             <h3 class="tertiary-title">Local de destaque</h3>
             <p>O evento será realizado em um local prestigiado pelos amantes de Design de Interiores, onde teremos exemplos de vários ambientes, tanto internos como externos.  </p>
         </div>
-
     </section>
+
+    <section class="event-details">
+        <div class="detail detail1">
+            <div class="detail__img">
+                <img src="./imgs/hrz-3.jpg" alt="">
+            </div>
+            <div class="text-detail">
+                <h3 class="text-big">Conheça os ambientes que você vai aprender a decorar</h3>
+            </div>
+        </div>
+
+        <div class="detail detail2">
+            <div class="text-detail">
+                <h3>Detalhes</h3>
+                <ul>
+                    <li>Posicionamento</li>
+                    <li>Aproveitamento de espaço</li>
+                    <li>Combinação de cores</li>
+                    <li>Organização</li>
+                    <li>E muito mais...</li>
+                </ul>
+            </div>
+            <div class="detail__img">
+                <img src="./imgs/hrz-4.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="detail detail3">
+            <div class="detail__img">
+                <img src="./imgs/hrz-5.jpg" alt="" >
+            </div>
+            <div class="text-detail">
+                <h3>Objetos</h3>
+                <ul>
+                    <li>Cadeiras</li>
+                    <li>Mesas</li>
+                    <li>Espelhos</li>
+                    <li>Plantas</li>
+                    <li>Cortinas</li>
+                    <li>E muito mais...</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="event-subscription">
+        <div class="subscribe-text"><p>Gostou? Então se inscreva!</p></div>;
+        <div class="btn-subscribe">
+            <button class="btn-end">Solicitar inscrição</button>
+        </div>
+    </section>
+
+    <footer class="flex">
+        <h3 class="footer-title">InDecor</h3>
+        <p class="footer-phrase">A evolução da decoração de interiores</p>
+
+        <p><strong>Entre em contato: </strong>oi@indecor.com.br</p>
+        <p><strong>Ou pelo telefone: </strong>(55)99990-9999</p>
+    </footer>
 </body>
 </html>
