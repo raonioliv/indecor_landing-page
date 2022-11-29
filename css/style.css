@@ -1,4 +1,7 @@
 /* header stylesheet */
+body{ 
+    width: 100vw;
+}
 
 .header-container{ 
     background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)), url("../imgs/hrz-5.jpg");
@@ -43,6 +46,7 @@ form{
     margin: 10px 0;
     max-width: 28%;
     padding: 30px 20px;
+    border-radius: 6px;
 }
 
 form p{ 
@@ -121,7 +125,7 @@ form button{
     gap: 20px;
     font-size: 1.8em;
     width: 250px;
-    max-width: 40%;
+    max-width: 33%;
 }
 .event-description{ 
     display: block;
@@ -207,21 +211,29 @@ section.event-details{
 
 .text-detail ul{ 
     list-style: square;
-    font-size: 1.8em;
-    margin-left: 2em;
+    font-size: 2em;
     margin-top: 2em;
     
 }
 
-.text-detail h3{ 
-    font-size: 2em;
-    font-weight: 500;
-    margin-left: 2em;
+.detail2 .text-detail,.detail3 .text-detail{ 
+    margin-left: 4em;
 }
+
+.text-detail h3:not(.text-big){ 
+    font-size: 3em;
+    font-weight: 500;
+}
+
+
+
 
 .text-big{ 
     margin-top: 30px;
-    font-size: 3em !important;
+    margin-left: 2em;
+    font-weight:bold ;
+    font-size: 4em ;
+    max-width: 500px;
 }
 
 .detail__img{ 
@@ -231,7 +243,7 @@ section.event-details{
 
 .detail__img img{ 
     width: 100%;
-    max-width: 640px;
+    /* max-width: 640px; */
 }
 
 
@@ -314,7 +326,7 @@ footer p:not(.footer-phrase){
     font-size: 1.2em;
     
 }
-@media (min-width:2000px){ 
+@media (min-width:1600px){ 
     .benefit{
 
     }
@@ -341,3 +353,116 @@ footer p:not(.footer-phrase){
     }
 }
 
+
+
+/* header section */
+
+
+@media(max-width: 475px){ 
+
+    body{ 
+        width: 100vw;
+    }
+    .header-container{ 
+        padding: 30px;
+        height: auto;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    form{ 
+        max-width: 80%;
+        width: 100%;
+    }
+}
+
+
+
+/* benefits section */
+@media (max-width: 475px){ 
+    .benefits-container{ 
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .benefits{ 
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+
+/*  */
+@media (max-width: 475px){
+    .event-local{ 
+        height: 50vh;
+    }
+
+    .event-adress{ 
+        width: 100%;
+        justify-content: center;
+    }
+    .local-details{ 
+        display: none;
+    }
+}
+
+
+
+/* event-details section */
+@media (max-width: 475px){ 
+    
+
+    .detail{ 
+        flex-direction: column;
+        font-size: .5em;
+    }
+
+    .detail1 .text-detail{ 
+        width: 80%;
+        margin-left: 1em;
+    }
+    .text-big{ 
+        margin-left: 0px;
+    }
+
+    .detail1 .detail__img{ 
+        display: none;
+    }
+    .detail2 .detail__img{ 
+        order: 1;
+    }
+
+    .detail2 .text-detail{ 
+        order: 2;
+    }
+
+    .detail__img{ 
+        width: 100%;
+    }
+
+    .detail2 .text-detail, .detail3 .text-detail{ 
+        margin-top: 40px;
+    }
+   
+   
+}
+
+/* subscribe mobile */
+
+@media (max-width: 475px){ 
+
+    .event-subscription{ 
+        margin-top: 40px;
+    }
+    .subscribe-text{ 
+        font-size:2em;
+    }
+
+    .btn-subscribe button{ 
+        background-image: linear-gradient(#70dafa, #00baf2);
+        color: white;
+        font-weight: 600;
+    }
+}
