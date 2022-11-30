@@ -44,7 +44,7 @@ form{
     width: 50%;
     background-color: var(--secondary);
     margin: 10px 0;
-    max-width: 28%;
+    max-width: 325px;
     padding: 30px 20px;
     border-radius: 6px;
 }
@@ -327,8 +327,13 @@ footer p:not(.footer-phrase){
     
 }
 @media (min-width:1600px){ 
-    .benefit{
+    form{ 
+        max-width: 350px;
+        font-size: 1.4em;
+    }
 
+    .event-details-header{ 
+        font-size: 1.4em;
     }
 
     .benefits{ 
@@ -355,10 +360,18 @@ footer p:not(.footer-phrase){
 
 
 
+
+/* MOBILE DISPLAY */
+@media(max-width: 350px){ 
+    .btn-subscribe{ 
+        padding: 10px 30px;
+    }
+}
+
 /* header section */
 
 
-@media(max-width: 475px){ 
+@media(max-width: 525px){ 
 
     body{ 
         width: 100vw;
@@ -379,7 +392,7 @@ footer p:not(.footer-phrase){
 
 
 /* benefits section */
-@media (max-width: 475px){ 
+@media (max-width: 525px){ 
     .benefits-container{ 
         flex-direction: column;
         padding: 10px;
@@ -394,7 +407,7 @@ footer p:not(.footer-phrase){
 
 
 /*  */
-@media (max-width: 475px){
+@media (max-width: 700px){
     .event-local{ 
         height: 50vh;
     }
@@ -411,7 +424,7 @@ footer p:not(.footer-phrase){
 
 
 /* event-details section */
-@media (max-width: 475px){ 
+@media (max-width: 525px){ 
     
 
     .detail{ 
@@ -451,7 +464,7 @@ footer p:not(.footer-phrase){
 
 /* subscribe mobile */
 
-@media (max-width: 475px){ 
+@media (max-width: 525px){ 
 
     .event-subscription{ 
         margin-top: 40px;
@@ -464,5 +477,132 @@ footer p:not(.footer-phrase){
         background-image: linear-gradient(#70dafa, #00baf2);
         color: white;
         font-weight: 600;
+    }
+}
+
+
+
+
+
+/* TABLET DISPLAY */
+
+@media (max-width: 750px){ 
+    /* HEADER */
+    body{ 
+        width: 100vw;
+    }
+    .header-container{ 
+        padding: 30px;
+        height: auto;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    form{ 
+        max-width: 325PX;
+        width: 100%;
+    }
+
+    /* BENEFITS SECTION */
+
+    /* EVENT LOCATION SECTION */
+    .event-subscription{ 
+        margin-top: 40px;
+    }
+    .subscribe-text{ 
+        font-size:2em;
+    }
+
+    .btn-subscribe button{ 
+        background-image: linear-gradient(#70dafa, #00baf2);
+        color: white;
+        font-weight: 600;
+    }
+
+    /* EVENT DETAILS SECTION */
+    .detail{ 
+        flex-direction: column;
+        font-size: .5em;
+    }
+
+    .detail1 .text-detail{ 
+        width: 80%;
+        margin-left: 1em;
+    }
+    .text-big{ 
+        margin-left: 0px;
+    }
+
+    .detail1 .detail__img{ 
+        display: none;
+    }
+    .detail2 .detail__img{ 
+        order: 1;
+    }
+
+    .detail2 .text-detail{ 
+        order: 2;
+    }
+
+    .detail__img{ 
+        width: 100%;
+    }
+
+    .detail2 .text-detail, .detail3 .text-detail{ 
+        margin-top: 40px;
+        font-size: 2em;
+    }
+
+    /* EVENT SUBSCRIBE SECTION */
+
+
+
+}
+
+
+
+/* LAPTOP SMALL */
+
+@media (max-width: 1000px){ 
+
+    /* EVENT DETAILS SECTION */
+    .detail{ 
+        flex-direction: column;
+        font-size: .5em;
+    }
+
+    .detail1 .text-detail{ 
+        width: 80%;
+        margin-left: 1em;
+    }
+    .text-big{ 
+        margin-left: 0px;
+        font-size: 5em;
+    }
+
+    .detail1 .detail__img{ 
+        display: none;
+    }
+    .detail2 .detail__img{ 
+        order: 1;
+    }
+
+    .detail2 .text-detail{ 
+        order: 2;
+    }
+
+    .detail__img{ 
+        width: 100%;
+    }
+
+    .detail2 .text-detail, .detail3 .text-detail{ 
+        margin-top: 40px;
+        font-size: 2em;
+    }
+
+    /* EVENT SUBSCRIBE SECTION */
+
+    .event-subscription{ 
+        margin-top: 2em;
     }
 }
